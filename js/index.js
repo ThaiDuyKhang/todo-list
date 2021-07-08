@@ -71,7 +71,7 @@ getEle("addItem").addEventListener("click",() => {
     listTasks.addTaskApi(tasks)
     .then ((result)=>{
         fetchData();
-        console.log(result.data);
+//         console.log(result.data);
     })
     .catch ((error)=>{
         console.log(error);
@@ -82,7 +82,7 @@ getEle("addItem").addEventListener("click",() => {
 const delTask = (id) =>{
         listTasks.deleteTaskApi(id)
         .then ((result)=>{
-            console.log(id);
+//             console.log(id);
             getEle(`del-animation${id}`).animate = delAnimation(`${id}`);
             fetchData();
         })
