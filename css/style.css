@@ -1,15 +1,15 @@
 @font-face {
-  font-family: Helv-Nue;
+  font-family: Helvetica Neue;
   font-weight:100;
   src: url(/asset/fonts/helveticaneuelight.ttf);
 }
 @font-face {
-  font-family: Helv-Nue;
+  font-family: Helvetica Neue;
   font-weight:normal;
   src: url(/asset/fonts/helveticaneue.ttf);
 }
 @font-face {
-  font-family: Helv-Nue;
+  font-family: Helvetica Neue;
   font-weight: bold;
   src: url(/fonts/helveticaneuebold.ttf);
 }
@@ -19,7 +19,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Helv-Nue','Nunito', sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif;
   background-color: #fee9f042;
   font-weight: 200;
   font-size: 13px;
