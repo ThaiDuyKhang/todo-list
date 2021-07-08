@@ -1,17 +1,17 @@
 @font-face {
   font-family: Helv-Nue;
   font-weight:100;
-  src: url(/asset/fonts/helveticaneuelight.ttf);
+  src: url(./asset/fonts/helveticaneuelight.ttf);
 }
 @font-face {
   font-family: Helv-Nue;
   font-weight:normal;
-  src: url(/asset/fonts/helveticaneue.ttf);
+  src: url(./asset/fonts/helveticaneue.ttf);
 }
 @font-face {
   font-family: Helv-Nue;
   font-weight: bold;
-  src: url(/asset/fonts/helveticaneuebold.ttf);
+  src: url(./asset/fonts/helveticaneuebold.ttf);
 }
 *{
   margin: 0;
@@ -33,7 +33,7 @@ body:after{
   left:0;
   width:100%;
   height:100%;
-  background: url(/asset/img/bg.jpg) center center no-repeat;
+  background: url(./asset/img/bg.jpg) center center no-repeat;
   background-size:cover;
   opacity: .6;
   z-index: -1;
@@ -210,9 +210,7 @@ span.toggle-btn:hover{
 
 /* Add */
 .card__add{
-
-    /* background: #DE3963; */
-    display: flex;
+  display: flex;
   position: relative;
   
   margin-top: 35px;
@@ -224,7 +222,6 @@ span.toggle-btn:hover{
     color: #FA396B;
     font-size: 15px;
     font-weight: 400;
-    /* text-indent: 18px; */
     transition: .2s ease-in-out;
     background: #FEE9F0;
     border: 0px;
@@ -497,27 +494,27 @@ svg.success-svg{
   transform: scale(1.2);
 }
 .success__check {
-	fill: none;
-	stroke: #78DEC7;
-	stroke-width: 7;
-	stroke-linecap: round;
-	stroke-linejoin: round;
-	stroke-miterlimit: 10;
-	stroke-dasharray: 400;
+fill: none;
+stroke: #78DEC7;
+stroke-width: 7;
+stroke-linecap: round;
+stroke-linejoin: round;
+stroke-miterlimit: 10;
+stroke-dasharray: 400;
 }
 
 .success__circle {
   position: absolute;
   top:50px;
-	fill-rule: evenodd;
-	clip-rule: evenodd;
-	fill: none;
-	stroke: #78DEC7;
-	stroke-width: 7;
-	stroke-linecap: round;
-	stroke-linejoin: round;
-	stroke-miterlimit: 20;
-	stroke-dasharray: 400;
+fill-rule: evenodd;
+clip-rule: evenodd;
+fill: none;
+stroke: #78DEC7;
+stroke-width: 7;
+stroke-linecap: round;
+stroke-linejoin: round;
+stroke-miterlimit: 20;
+stroke-dasharray: 400;
 }
 
 #delBtn {
@@ -546,7 +543,7 @@ svg.success-svg{
   bottom: 5px;
   right: 0;
   content: '';
-  background: url("/asset/img/poof.png") no-repeat 0 0;
+  background: url(./asset/img/poof.png) no-repeat 0 0;
   animation: poof 500ms 1;
   animation-fill-mode: forwards;
   background-size: 15px 75px;
