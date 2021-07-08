@@ -357,7 +357,7 @@ ul.todo#todo:empty:after {
 }
 
 ul.todo#completed:empty:after {
-  content: 'Chưa hoàn thành việc nào hôm này.';
+  content: 'Chưa hoàn thành việc nào hôm nay.';
 }
 
 ul.todo#todo:after,
