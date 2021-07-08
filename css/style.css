@@ -1,15 +1,15 @@
 @font-face {
-  font-family: Helvetica Neue;
+  font-family: HelveticaNeue;
   font-weight:100;
   src: url(/asset/fonts/helveticaneuelight.ttf);
 }
 @font-face {
-  font-family: Helvetica Neue;
+  font-family: HelveticaNeue;
   font-weight:normal;
   src: url(/asset/fonts/helveticaneue.ttf);
 }
 @font-face {
-  font-family: Helvetica Neue;
+  font-family: HelveticaNeue;
   font-weight: bold;
   src: url(/fonts/helveticaneuebold.ttf);
 }
@@ -19,8 +19,8 @@
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif;
-  background-color: #fee9f042;
+  font-family: -apple-system,BlinkMacSystemFont,"HelveticaNeue","Nunito",Roboto,sans-serif;
+  background-color: #FEE9F0;
   font-weight: 200;
   font-size: 13px;
   letter-spacing: 0px;
@@ -44,11 +44,6 @@ h2{
   font-size: 35px;
   margin-top:-10px;
 }
-span {
-  letter-spacing: 0px;
-}
-
-
 .card {
   margin: 50px auto;
   background-color: #fff;
@@ -340,7 +335,7 @@ ul.todo#completed {
 hr {
   width: 150px;
   border: 1px solid #FEE9F0;
-  background-color: #FEE9F0;;
+  background-color: #FEE9F0;
   border-radius: 5px;
   margin: 0 auto;
 }
