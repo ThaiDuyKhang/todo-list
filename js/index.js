@@ -46,11 +46,7 @@ const fetchData = () => {
     let completed = [];
 
       result.data.forEach((check) => {
-        if (check.complete === false) {
-          todo.push(check);
-        } else {
-          completed.push(check);
-        }
+      return check.complete === false ? todo.push(check) : completed.push(check);
       });
 
       getEle("todo").innerHTML = renderTasks(todo);
@@ -125,8 +121,8 @@ const completeTask = (id, content) => {
 
     listTasks.getTaskApi(id)
     .then((result) => {
-      let isCheck = false;
-      if (isCheck === result.data.complete) {
+      let isCheck = result.data.complete;
+      if (isCheck === false) {
         isCheck = true;
       }
       const tasks = new Tasks(id, content, isCheck);
@@ -153,8 +149,8 @@ const unComplete = (id, content) =>{
 
     listTasks.getTaskApi(id)
     .then((result) => {
-      let isCheck = true;
-      if (isCheck === result.data.complete) {
+      let isCheck = result.data.complete;
+      if (isCheck === true) {
         isCheck = false;
       }
       const tasks = new Tasks(id, content, isCheck);
@@ -181,7 +177,7 @@ getEle("one").addEventListener("click",()=>{
 
 //A-Z
 getEle("two").addEventListener("click", () => {
-    const listTodo = document.getElementById("todo");
+    const listTodo = getEle("todo");
     const taskTodo = listTodo.getElementsByTagName("li");
     const todo = [];
     for (let i = 0; i < taskTodo.length; i++) {
@@ -192,7 +188,7 @@ getEle("two").addEventListener("click", () => {
       taskTodo[i].getElementsByClassName("contentTask")[0].innerHTML = todo[i];
     }
     //Completed sort
-    const listCompleted = document.getElementById("completed");
+    const listCompleted = getEle("completed");
     const taskCompleted = listCompleted.getElementsByTagName("li");
     const completed = [];
     for (var i = 0; i < taskCompleted.length; i++) {
@@ -206,7 +202,7 @@ getEle("two").addEventListener("click", () => {
   
   //Z-A
   getEle("three").addEventListener("click", () => {
-    const listTodo = document.getElementById("todo");
+    const listTodo = getEle("todo");
     const taskTodo = listTodo.getElementsByTagName("li");
     const todo = [];
     for (let i = 0; i < taskTodo.length; i++) {
@@ -217,7 +213,7 @@ getEle("two").addEventListener("click", () => {
       taskTodo[i].getElementsByClassName("contentTask")[0].innerHTML = todo[i];
     }
     //Completed sort
-    const listCompleted = document.getElementById("completed");
+    const listCompleted = getEle("completed");
     const taskCompleted = listCompleted.getElementsByTagName("li");
     const completed = [];
     for (var i = 0; i < taskCompleted.length; i++) {
