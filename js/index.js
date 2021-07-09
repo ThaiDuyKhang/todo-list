@@ -181,22 +181,22 @@ getEle("two").addEventListener("click", () => {
     const taskTodo = listTodo.getElementsByTagName("li");
     const todo = [];
     for (let i = 0; i < taskTodo.length; i++) {
-      todo.push(taskTodo[i].getElementsByClassName("contentTask")[0].innerHTML);
+      todo.push(taskTodo[i].getElementsByClassName("singleTask")[0].innerHTML);
     }
     todo.sort((a, b) => a.localeCompare(b));
     for (let i = 0; i < taskTodo.length; i++) {
-      taskTodo[i].getElementsByClassName("contentTask")[0].innerHTML = todo[i];
+      taskTodo[i].getElementsByClassName("singleTask")[0].innerHTML = todo[i];
     }
     //Completed sort
     const listCompleted = getEle("completed");
     const taskCompleted = listCompleted.getElementsByTagName("li");
     const completed = [];
     for (var i = 0; i < taskCompleted.length; i++) {
-      completed.push(taskCompleted[i].getElementsByClassName("contentTask")[0].innerHTML);
+      completed.push(taskCompleted[i].getElementsByClassName("singleTask")[0].innerHTML);
     }
     completed.sort((a, b) => a.localeCompare(b));
     for (let i = 0; i < taskCompleted.length; i++) {
-      taskCompleted[i].getElementsByClassName("contentTask")[0].innerHTML = completed[i];
+      taskCompleted[i].getElementsByClassName("singleTask")[0].innerHTML = completed[i];
     }
   });
   
@@ -206,22 +206,22 @@ getEle("two").addEventListener("click", () => {
     const taskTodo = listTodo.getElementsByTagName("li");
     const todo = [];
     for (let i = 0; i < taskTodo.length; i++) {
-      todo.push(taskTodo[i].getElementsByClassName("contentTask")[0].innerHTML);
+      todo.push(taskTodo[i].getElementsByClassName("singleTask")[0].innerHTML);
     }
     todo.sort((a, b) => b.localeCompare(a));
     for (let i = 0; i < taskTodo.length; i++) {
-      taskTodo[i].getElementsByClassName("contentTask")[0].innerHTML = todo[i];
+      taskTodo[i].getElementsByClassName("singleTask")[0].innerHTML = todo[i];
     }
     //Completed sort
     const listCompleted = getEle("completed");
     const taskCompleted = listCompleted.getElementsByTagName("li");
     const completed = [];
     for (var i = 0; i < taskCompleted.length; i++) {
-      completed.push(taskCompleted[i].getElementsByClassName("contentTask")[0].innerHTML);
+      completed.push(taskCompleted[i].getElementsByClassName("singleTask")[0].innerHTML);
     }
     completed.sort((a, b) => b.localeCompare(a));
     for (let i = 0; i < taskCompleted.length; i++) {
-      taskCompleted[i].getElementsByClassName("contentTask")[0].innerHTML = completed[i];
+      taskCompleted[i].getElementsByClassName("singleTask")[0].innerHTML = completed[i];
     }
   });
   
