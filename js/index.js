@@ -66,7 +66,7 @@ fetchData();
 //Add Task
 getEle("addItem").addEventListener("click",() => {
     const _content = getEle("newTask").value;
-    const tasks = new Tasks("", _content, false);
+    const tasks = new Tasks("", _content);
     
     listTasks.addTaskApi(tasks)
     .then ((result)=>{
@@ -191,7 +191,7 @@ getEle("two").addEventListener("click", () => {
     for (let i = 0; i < taskTodo.length; i++) {
       taskTodo[i].getElementsByClassName("contentTask")[0].innerHTML = todo[i];
     }
-  
+    //Completed sort
     const listCompleted = document.getElementById("completed");
     const taskCompleted = listCompleted.getElementsByTagName("li");
     const completed = [];
@@ -216,6 +216,7 @@ getEle("two").addEventListener("click", () => {
     for (let i = 0; i < taskTodo.length; i++) {
       taskTodo[i].getElementsByClassName("contentTask")[0].innerHTML = todo[i];
     }
+    //Completed sort
     const listCompleted = document.getElementById("completed");
     const taskCompleted = listCompleted.getElementsByTagName("li");
     const completed = [];
