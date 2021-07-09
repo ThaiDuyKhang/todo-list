@@ -558,7 +558,7 @@ stroke-dasharray: 400;
   right: 0;
   content: '';
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/8585/poof.png) no-repeat 0 0;
-  background: url(/asset/img/poof.png) no-repeat 0 0;
+/*   background: url(/asset/img/poof.png) no-repeat 0 0; */
   animation: poof 500ms 1;
   animation-fill-mode: forwards;
   background-size: 15px 75px;
